@@ -60,9 +60,6 @@ int main()
 		printf("\n");
 	}
 
-	freopen_s(&stream1, "CON", "w", stdout);				// return to write in CMD
-//	freopen("CON", "w", stdout);
-
 	for (int i = 1; i <= N; i++) {
 		for (int j = 50; j > 0; j--) {
 			if ((Ex[i].Statements[j] == false) && (Ex[i].Statements[j - 1] == true)) {
