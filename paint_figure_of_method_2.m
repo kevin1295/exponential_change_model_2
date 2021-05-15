@@ -1,5 +1,5 @@
 clear
-num=xlsread('result.csv', 'A3:E402') %读取出该区域的数据作为表格
+num = csvread('result.csv', 2, 0)%读取出该区域的数据作为表格
 C=num(:,4) %从B矩阵取出第一列的所有行
 B=num(:,2) 
 A=num(:,1) 

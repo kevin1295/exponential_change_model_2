@@ -1,7 +1,6 @@
 ﻿// exponential_change_model_2.cpp : 此文件包含 "main" 函数。程序执行将在此处开始并结束。
 //
 
-// #include <bits/stdc++.h>									// difference between two IDEs
 #include <iostream>
 #include <math.h>
 #include <algorithm>
@@ -52,7 +51,6 @@ int main()
 	FILE* stream1;											// prepare to write into documents
 
 	freopen_s(&stream1, "out.txt", "w", stdout);
-	//	freopen("out.txt", "w", stdout);					// difference between two IDEs
 	for (int i = 1; i <= N; i++) {
 		for (int j = 1; j <= 51; j++) {
 			printf("%c", Ex[i].Statements[j] ? 'x' : 'o');
@@ -79,7 +77,7 @@ int main()
 	}
 
 	for (int i = 1; i <= N; i++) {
-		for (int j = 49; j > 1; j--) {
+		for (int j = 48; j > 1; j--) {
 			if ((Ex[i].Statements[j - 1] == true) && (Ex[i].Statements[j] == false) && (Ex[i].Statements[j + 1] == false) && (Ex[i].Statements[j + 2] == true)) {
 				Parkpoint[i][3] = j;
 				break;
@@ -87,7 +85,7 @@ int main()
 			if (j == 1) {
 				for (int j = 50; j > 0; j--) {
 					if (Ex[i].Statements[j] == false) {
-						Parkpoint[i][2] = 0 - j;
+						Parkpoint[i][3] = (t[2] - t[1]) / (t[1] + t[2]) * j;
 						break;
 					}
 				}
@@ -120,6 +118,8 @@ int main()
 
 		}
 	}
+
+	freopen_s(&stream1, "CON", "w", stdout);
 
 	return 0;
 }
