@@ -141,6 +141,12 @@
   <ItemGroup>
     <ClCompile Include="exponential_change_model_2.cpp" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="paint_figure.m" />
+    <None Include="paint_figure_of_method_1.m" />
+    <None Include="paint_figure_of_method_2.m" />
+    <None Include="paint_figure_of_method_3.m" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

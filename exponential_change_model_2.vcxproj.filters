@@ -19,4 +19,18 @@
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="paint_figure.m">
+      <Filter>源文件</Filter>
+    </None>
+    <None Include="paint_figure_of_method_1.m">
+      <Filter>源文件</Filter>
+    </None>
+    <None Include="paint_figure_of_method_2.m">
+      <Filter>源文件</Filter>
+    </None>
+    <None Include="paint_figure_of_method_3.m">
+      <Filter>源文件</Filter>
+    </None>
+  </ItemGroup>
 </Project>
